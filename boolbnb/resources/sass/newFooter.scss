@@ -1,0 +1,103 @@
+@mixin flex  {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.foot {
+  color: white;
+  height: auto;
+  background: #1b3c59;
+  width: 100%;
+  overflow: hidden;
+  .footerUp {
+    height: 70%;
+    padding:35px;
+    @include flex;
+    width: 100%;
+    .footerUp_sx{
+      height: 100%;
+      @include flex;
+
+      width: 50%;
+      .footerUp_sx_logo{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        img {
+          height: 70px;
+          width: 250px;
+        }
+      }
+    }
+    .footerUp_dx{
+      height: 100%;
+      @include flex;
+      width: 50%;
+    }
+  }
+
+  .footerDown {
+    height: 20%;
+    width: 100%;
+
+    .footerDown_logos{
+      width: 100%;
+      @include flex;
+      height: 15%;
+      margin-bottom: 20px;
+
+      h4 {
+        margin-bottom: 0px !important;
+      }
+      i {
+        font-size: 25px;
+        padding: 0 10px;
+        &:nth-child(2){
+          padding: 0 10px 0 20px;
+        }
+      }
+    }
+    .footerDown_address{
+      @include flex;
+      margin-bottom: 10px;
+      height: 15%;
+      width: 100%;
+    }
+  }
+
+}
+@media screen and (max-width: 522px) {
+  .foot{
+    padding: 10px;
+  }
+  .footerUp {
+    padding:35px 0 !important;
+    flex-direction: column;
+    .footerUp_sx{
+      &:first-child{
+        width: 100% !important;
+        margin-bottom: 20px;
+      }
+
+    }
+  }
+  .footerDown_address{
+    margin-bottom: 20px;
+    h3{
+    width: 350px;
+    }
+  }
+}
+
+@media screen and (min-width:523px) and (max-width: 716px) {
+
+  .footerDown_address{
+    margin-bottom: 30px;
+    h3{
+    width: 350px;
+    }
+  }
+}

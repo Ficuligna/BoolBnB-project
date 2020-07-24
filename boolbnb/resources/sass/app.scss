@@ -1,0 +1,670 @@
+// Variables
+@import 'variables';
+
+// Bootstrap l'ho commentato perché non mi prendeva le modifiche al file _home
+@import '~bootstrap/scss/bootstrap';
+
+  .blu {
+    color: #1b3c59 !important;
+  }
+
+  .verde {
+    color: #61ce4e;
+  }
+
+  body{
+    background-color: white;
+    margin-top: 85px;
+
+  .accedi, .registrati,  {
+    width:340px;
+    margin: auto;
+    border-radius:5px;
+    text-align: center;
+    background-color: white;
+    font-size: 15px;
+    position: sticky;
+    z-index: 1060;
+
+    .input{
+      margin:auto;
+
+      #mail, #password, #nome, #cognome, #dataDiNascita{
+        height:50px;
+        width:80%;
+        margin-left:10%;
+        margin-bottom:10px;
+        font-size: 18px;
+      }
+    }
+
+    .continua{
+      text-align: center;
+
+      button{
+        font-size: 18px;
+        font-weight: bold;
+        padding: 2% 5%;
+        background-color:#61ce4e ;
+        color: white;
+        box-shadow: none;
+        border-radius: 5px;
+        margin: 5% 0;
+        border: none;
+      }
+    }
+  }
+.card-header{
+  display:none;
+}
+  .off{
+    display: none;
+  }
+  .on {
+    display: block;
+  }
+  .card-body{
+    height: 100%;
+    border:none;
+  }
+  .card{
+    width:340px;
+    height:100%;
+    margin: auto;
+    border-radius:5px;
+    text-align: center;
+    border:none;
+  }
+  .bordo{
+    border-top:none;
+  }
+  .btn-primary{
+    font-size: 18px;
+    font-weight: bold;
+    padding: 2% 5%;
+    background-color:#61ce4e ;
+    color: white;
+    box-shadow: none;
+    border-radius: 5px;
+    margin: 5% 0;
+    border: none;
+    margin-top:30px;
+  }
+}
+
+.form-check-label{
+  padding-left:20px;
+}
+.dispna{
+  display: none;
+  position: absolute;
+}
+
+.form-control{
+  height:40px;
+  font-size: 15px;
+}
+
+.modal-content {
+  width: 80%;
+}
+
+//_header
+
+nav {
+  position: fixed;
+  a{
+    img {
+      height:60px
+    }
+  }
+  .nav-link {
+    font-size: 18px;
+    color: #1b3c59;
+    margin-right: 10px;
+  }
+  .btn-outline-success {
+    color: white;
+    background-color: #1b3c59;
+    border-color: #1b3c59 !important;
+}
+}
+
+.scrollHeader {
+  background-color: rgba(255, 255, 255, 0.9);
+
+}
+
+
+.search_container{
+  position: relative;
+}
+.autocomplete{
+  z-index: 99999;
+  position: absolute;
+  width: 100%;
+  border-radius: 5px;
+  background: #1c3d58e0;
+  color: white;
+  padding: 20px;
+  top: 48px;
+  left: 0;
+  display:none;
+  p{
+    font-size:15px;
+    cursor: pointer;
+    width: 100%;
+    padding: 3px;
+    &:hover{
+      background-color: #1C3D58;
+      box-shadow: 2px 2px 2px black;
+      border-radius: 4px;
+      padding: 3px 3px 3px 15px;
+    }
+  }
+}
+@media (max-width: 1179px) {
+    .carousel-item>img {
+        max-height: 350px;
+    }
+}
+@media (max-width: 750px) {
+    .carousel-item>img {
+        max-height: 330px;
+    }
+}
+
+//_welcome
+.carousel-item {
+  max-height: 550px;
+  img {
+    text-align: center;
+  }
+ .titolo-slide{
+    font-weight: 700;
+    margin-bottom: 0;
+    color: white !important;
+    text-shadow: 1px 1px grey;
+    font-size: 50px;
+  }
+  span {
+    font-size: 25px;
+    font-weight: 700;
+    text-shadow: 0.5px 0.5px black;
+  }
+}
+
+.titolo-principale {
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.space {
+  width: 100%;
+  height: 20px;
+}
+.img_welcome{
+    height: 60%;
+}
+.dettagli-welcome {
+  border: 1px solid #ced4da;
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  .conteiner_info{
+    height: 75%;
+    overflow: hidden;
+    h3{
+        font-size: 1.4rem!important;
+    }
+    p{
+        margin-bottom: 0!important;
+
+    }
+  }
+
+  span {
+    font-size: 20px;
+    margin-top: 5px;
+    display: inline-block;  }
+}
+// @media screen and (min-width: 990px) and (max-width:1300px){
+//     .dettagli-welcome {
+//         span{
+//             font-size:14px;
+//         }
+//         h3{
+//             font-size: 1rem!important;
+//         }
+//         p{
+//             font-size:12px;
+//         }
+//     }
+// }
+//footer bottom
+.content{
+  min-height: calc(100vh - 85px);
+}
+
+//pagamento
+h4{
+	 font-size: 20px;
+}
+.sear_bar{
+	border:1px solid #1B3C59;
+	height: 30px;
+	border-radius:5px;
+  width: 150px;
+  font-size: 16px;
+  text-align: center;
+
+}
+#apt_name{
+	 font-weight:700;
+	 font-size:25px;
+	 color:#1b3c59;
+}
+#submit-button, #pay{
+	font-size: 15px;
+	font-weight: 700;
+	height:30px;
+	color:white;
+	border-radius:5px;
+	border:1px solid #1B3C59;
+	background-color:#1b3c59;
+}
+#pay{
+	background-color: #61CE4E!important;
+}
+.braintree-sheet {
+
+  width: 36%;
+}
+
+.paypay {
+  margin-top: 160px;
+  h1 {
+  font-size: 50px;
+  font-weight: 700;
+  }
+}
+
+//_user_apartments
+.crea_appartamento {
+  border-radius:5px;
+  height: 350px;
+  background-color: #DBDBDB	;
+  opacity:0.5;
+  text-align: center;
+  .fas{
+    padding-top: 20px;
+    padding-right: 20px;
+    font-size:250%;
+  }
+}
+
+.img-apartment{
+  border-radius:5px;
+  height: 350px;
+}
+
+//_ui_apartaments
+
+.space_search {
+  width: 100%;
+  height: 20px;
+}
+
+.dove {
+  font-size: 18px;
+  color: #1b3c59;
+  border: 1px solid #ced4da;
+  border-top-right-radius: 5px;
+  width: 100%;
+  height: 50px;
+}
+
+.filtri {
+  border: 1px solid #ced4da;
+
+  border-top: none;
+  font-size: 18px;
+  color: #1b3c59;
+  #rooms, #beds {
+    margin: 4px 9px 6px;
+    width: 45px;
+    height: 25px;
+    text-align: center;
+    border-color: #ced4da;
+  }
+  #search_radius {
+    margin-top: 10px;
+    width: 100%;
+    height: 25px;
+    text-align: center;
+    border-color: #ced4da;
+  }
+  #filtered2{
+    background-color: #61ce4e;
+    color: white;
+    height: 50px;
+    border: none;
+  }
+  #apt_address {
+    border: none;
+  }
+  span {
+    padding-top: 10px;
+  }
+}
+
+.appartamento {
+  border: 1px solid #ced4da;
+}
+
+.search_container2{
+      position: relative;
+  .autocomplete{
+    z-index: 99999;
+    position: absolute;
+    width: 100%;
+    border-radius: 5px;
+    background: #1c3d58e0;
+    color: white;
+    padding: 20px;
+    top: 105px;
+    left: 0;
+    div{
+      width: 100%;
+      p{
+        font-size:15px;
+        cursor: pointer;
+        width: 100%;
+        padding: 3px;
+        &:hover{
+          background-color: #1C3D58;
+          box-shadow: 2px 2px 2px black;
+          border-radius: 4px;
+          padding: 3px 3px 3px 15px;
+        }
+      }
+    }
+  }
+}
+
+
+.results {
+
+  img {
+    height: 300px;
+    width: auto;
+  }
+  .font_search {
+    font-size: 18px;
+  }
+}
+
+.sponsored {
+  background-color: #61ce4e;
+  color: white;
+  font-size: 22px;
+  width: 153px;
+  text-align: center;
+  font-weight: 700;
+  position: absolute;
+  bottom: 0px;
+  right: 0;
+}
+
+//_create_apartment
+
+.dim{
+  font-size:15px;
+  margin-top:50px;
+  .dimdue{
+    float: left;
+    color:#1b3c59;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom:20px;
+  }
+  label{
+    margin-top:30px;
+    color:#1b3c59;
+    font-size:18px;
+    font-weight: 700;
+  }
+  input{
+    float: right;
+  }
+}
+.ridim{
+  input{
+      height: 100%;
+  }
+}
+.display{
+  display:inline-block;
+  .flexino{
+    height: 50px;
+    width: 100%;
+    margin-top:40px;
+    display: flex;
+    align-items: baseline;
+    margin-right:2%;
+    margin-bottom:5%;
+    font-size:20px;
+    .checkbox{
+      margin-right:8%;
+    }
+  }
+}
+.color{
+  width: 100%;
+  margin-top: 40px;
+  float: left;
+  font-size: 25px !important;
+  font-weight: 500 !important;
+  color:#1b3c59;
+}
+#create2, #update2 {
+  color: white;
+  background-color: #1B3C59;
+  font-weight: 700;
+  height: 42px;
+  font-size: 15px;
+  border-radius: 5px;
+  padding: 0 10px;
+}
+.selectsi{
+  label{
+    margin-top:30px;
+    color:#1b3c59;
+    font-size:15px;
+    font-weight: 700;
+    margin-right: 10px;
+  }
+  select{
+    height: 28px;
+    width: 125px;
+    font-size: 15px;
+  }
+  margin-bottom:15px;
+}
+
+//_show_ui_apartment
+
+.titolo-appartamento {
+  font-size: 36px;
+}
+
+.paragrafo_appartamento {
+  font-size: 20px;
+  text-align:justify;
+}
+
+// {{-- MAPPA --}}
+.map{
+  text-align: center;
+  height: 400px;
+  width: 100%;
+  margin: 5% 0;
+  #map{
+    height: 100% !important;
+    width: 100% !important;
+  }
+}
+
+// {{-- MODIFICA CANCELLA APPARTAMENTO --}}
+.map_proprietario {
+  height: 400px;
+  width: 100%;
+  margin: 5% 0;
+  #map{
+    height: 100% !important;
+    width: 100% !important;
+  }
+}
+
+.modifica {
+  display: flex;
+  margin: auto;
+  justify-content:space-around;
+  div, label {
+    font-size: 20px;
+  }
+
+}
+
+.insert_dati{
+  #mail_msg{
+    height: 50px;
+    width: 80%;
+    margin:auto;
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+  #message{
+    height:100px;
+    width:80%;
+    font-size: 18px;
+    margin:auto;
+  }
+}
+.invia{
+  button{
+    font-size: 15px;
+    font-weight: bold;
+    padding: 2% 5%;
+    background-color:#1b3c59 ;
+    color: white;
+    box-shadow: none;
+    border-radius: 5px;
+    margin: 5% 0;
+    border: none;
+  }
+}
+
+@media screen and (min-width: 767.98px){
+  .descr {
+    text-align: left;
+  }
+}
+
+.msg {
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+}
+
+select {
+  height: 36px;
+}
+
+//_upra_messages
+
+.messaggio_destinatario {
+  border-bottom:1px dotted grey;
+  position: relative;
+  padding: 32px;
+  h3 {
+    font-size: 22px;
+    font-weight: 700;
+  }
+  p {
+    font-size:15px;
+  }
+  &:hover {
+    box-shadow: 4px 5px 7px;
+
+  }
+}
+#section-messages{
+    background-color: #F4F7F7;
+    border-radius: 5px;
+    font-size: 20px;
+  }
+
+.oggetto-messaggi{
+    margin-left: 10px;
+    display: inline;
+  }
+  .oggetto-messaggi:hover{
+    color: grey;
+    cursor: pointer;
+  }
+  .date_msg{
+      position: absolute;
+      bottom:0;
+      right: 0;
+      font-size:13px;
+  }
+
+  .checkbox{
+    background-color: #b3b0ae;
+    border: 1px solid black;
+  }
+  .background-color-checkbox{
+    background-color: white;
+    border: 1px solid black;
+  }
+
+
+//_statistics
+
+
+.contenitore_statistiche{
+  margin-top: 100px;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  h1 {
+    margin-bottom: 30px;
+  }
+  .statistics {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+
+
+//_footer
+
+footer{
+  width: 100%;
+  min-height: 85px;
+  background-color: #1b3c59;
+  color: white;
+  img {
+    margin-top: 5%;
+    height:60px;
+  }
+}
+.serviceul{
+  padding: 0;
+  li{
+    list-style-type: none;
+  }
+}

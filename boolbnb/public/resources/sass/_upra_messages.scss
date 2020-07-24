@@ -1,0 +1,29 @@
+.contenitore_messaggi {
+  height: 100%;
+  width: 100%;
+  // .email_destinatario {
+  //   margin-top: 50px;
+  //   float: right;
+  // }
+  .messaggio_destinatario {
+    height: 100%;
+    width:70%;
+    margin-top: 25px;
+    border-bottom:1px dotted grey;
+    h3 {
+      font-size: 22px;
+      font-weight: 700;
+      color:#1b3c59!important;
+    }
+    p {
+      color:#1b3c59!important;
+      font-size:15px;
+      color: black;
+      margin-bottom:20px;
+    }
+  }
+}
+h1 {
+  margin-bottom:60px;
+  color:#1b3c59!important;
+}

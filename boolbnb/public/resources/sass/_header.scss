@@ -1,0 +1,152 @@
+.header {
+  height: 127px;
+  width: 100%;
+  color: #1b3c59;
+  background-color: white;
+  position: fixed;
+  z-index: 99;
+  .logo{
+
+    img{
+      margin-top: 5%;
+      height:65px;
+      width: auto;
+    }
+  }
+  .navigazione {
+    margin-left: 0;
+    ul{
+      float: none;
+      li{
+        list-style: none;
+        display: inline-block;
+        margin: 2%;
+        margin-top: 6%;
+        button{
+          font-size: 15px;
+          padding: 6% 18%;
+          background-color: #1b3c59;
+          color: white;
+          box-shadow: none;
+          border-radius: 5px;
+        }
+        .reg {
+          background-color: white;
+          color: #1b3c59;
+          border: none;
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}
+
+.hamburger-menu{
+  float:right;
+  .ham {
+    height: 100%;
+    width: 100%;
+    margin-top: 3px;
+    margin-right: 65px;
+    ul{
+      display:inline;
+      li{
+        margin-bottom:2px;
+        list-style: none;
+        button{
+          font-size:20px;
+          background-color: #1b3c59;
+          color: white;
+          box-shadow: none;
+          border-radius: 5px;
+        }
+        .reg{
+          font-size:20px;
+          color:#1b3c59;
+          background-color: white;
+          border: none;
+        }
+      }
+    }
+  }
+}
+
+.fa-bars{
+  margin-top:2%;
+  float:right;
+  font-size:20px;
+  color:#1b3c59;
+  display:none;
+}
+.fa-times {
+  margin-top:2%;
+  color:#1b3c59;
+  font-size:25px;
+  display:inline-block;
+  position: fixed;
+  right: 20px;
+}
+@media screen and (max-width: 991px){
+  .fa-bars{
+    margin-top:-3%;
+    margin-right:4%;
+    display:inline-block;
+    position: fixed;
+    right: 20px;  }
+  .prova{
+    display:none;
+  }
+}
+
+@media screen and (min-width: 991px){
+
+  .lista_ham {
+    display: none;
+  }
+}
+
+.dropdown-item{
+  float: right;
+      color: white;
+      background-color: #1b3c59;
+      font-weight: 700;
+      height: 42px;
+      width: 77px;
+      font-size: 15px;
+      border-radius: 5px;
+      position: sticky;
+      margin-right: 0;
+      display: inline!important;
+}
+.loginlogout{
+      float: right;
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      position: -webkit-sticky;
+      position: sticky;
+      height:115px;
+      width: 50%;
+      background-color: white;
+      margin-top: -81px;
+      margin-right: 30px;
+      padding-top:30px;
+
+a{
+  font-weight: 700;
+  margin-top:20px;
+  width: 150px;
+    float: left;
+    height: 20px;
+    background-color: white;
+    font-size:15px;
+    color: #1b3c59;
+}
+.sinistra{
+// margin-left: 405px;
+}
+.destra{
+  margin-right:30px;
+
+}
+}

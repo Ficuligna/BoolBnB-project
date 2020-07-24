@@ -1,0 +1,177 @@
+.filtri {
+  background-color: white;
+  margin: 300px auto;
+  height: 42px;
+  width: 100%;
+  margin: 30px 0;
+  #ciaociao, #ciao {
+    height: 100%;
+    width: auto;
+  }
+
+  .stanze, .serv {
+    background-color: white;
+    color: #1b3c59;
+    margin-right: 15px;
+    border-radius: 10px;
+    border: 1px solid #8f8e8e;
+    font-size: 18px;
+    padding: 4px 9px;
+    margin: 20px 0;
+    position: relative;
+    button {
+      background-color: white;
+      color: #1b3c59;
+      border: none;
+    }
+  }
+  #apt_address {
+    height: 100%;
+    width: auto;
+    border: 1px solid #8f8e8e;
+    border-radius: 10px;
+    font-size: 18px;
+    padding: 4px 9px;
+    margin: 20px 0;
+  }
+
+  .distanza {
+    height: 100%;
+    border: 1px solid #8f8e8e;
+    border-radius: 10px;
+    font-size: 18px;
+    padding: 4px 9px;
+    margin: 20px 0;
+    input {
+      padding-left: 15px;
+      width: 65px;
+      border: none;
+    }
+  }
+
+  .filtro_cerca {
+    background-color: #1b3c59;
+    color: white;
+    margin-right: 15px;
+    border-radius: 10px;
+    border: 1px solid #1b3c59;
+    font-size: 18px;
+    padding: 4px 9px;
+    margin: 20px 0;
+    button {
+      border: none;
+      background-color: #1b3c59;
+      color: white;
+    }
+  }
+}
+
+
+
+
+// TIPO DI ALLOGGIO
+
+// .tipo_di_alloggio {
+//   height: auto;
+//   width: 175px;
+//   border: 1px solid #8f8e8e;
+//   border-radius: 5px;
+//   background-color: white;
+//   margin-top: 350px;
+//   margin-left: 14px;
+//   padding: 10px;
+//   color: #1b3c59;
+//   div {
+//     display: flex;
+//     align-items: center;
+//     font-size: 15px;
+//     input{
+//       margin: 4px 9px 6px;
+//     }
+//   }
+// }
+
+// SERVIZI
+
+.servizi {
+  height: auto;
+  width: 175px;
+  border-radius: 5px;
+  background-color: white;
+  padding: 10px;
+  color: #1b3c59;
+  position: absolute;
+  border: 1px solid #8f8e8e;
+  margin-left: 163px;
+  z-index: 99;
+  div {
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    input{
+      margin: 4px 9px 6px;
+    }
+  }
+}
+
+// STANZE E LETTI
+
+.stanze_letti {
+  height: auto;
+  width: 132px;
+  border-radius: 5px;
+  background-color: white;
+  color: #1b3c59;
+  align-items: center;
+  font-size: 15px;
+  padding: 10px;
+  border: 1px solid #8f8e8e;
+  margin-top: 71px;
+  margin-left: -322px;
+  z-index: 99;
+  position: absolute;
+  .bedrooms {
+    display: flex;
+    flex-wrap: nowrap;
+    label {
+      font-weight: 500;
+    }
+  }
+  input{
+    margin: 4px 9px 6px;
+    width: 20px;
+    height: 22px;
+  }
+}
+
+
+.results {
+  margin: 100px 0;
+  h1 {
+    margin: 20px 0;
+  }
+  .apartments_reserch {
+    .apartment_reserch {
+      margin: 40px 10px 0 10px;
+      width: calc(50% - 20px);
+      height: auto;
+      .foto_reserch {
+        img {
+          height: 100%;
+          width: 100%;
+          margin-bottom: 20px;
+        }
+      }
+      .caratteristiche_reserch {
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 575px){
+  .results {
+    margin: 150px 0;
+  }
+}

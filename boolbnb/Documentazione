@@ -1,0 +1,62 @@
+Obiettivi:
+
+- stampare in pagina tutti gli apparytasmenti per aggiungere tasto edit e fare la prova dell'edit
+- Aggiungere in tabella appartamento --> visibile si/no {FATTO}
+- Creare tabella visualizzazioni one to Many con apartment {FATTO}
+- Eliminare carta di credito e modificare i dati necessari per la registrazione {FATTO}
+- Ripristinare long e lat nella tabella appartamenti {FATTO}
+- creare nella welcome le possibilità di ricerca per località. {FATTO}
+- creare pagina show per tutti gli appartamenti {FATTO}
+- creare pagina show per ogni appartamento, inserire in un div la mappa con etichetta.
+https://developer.tomtom.com/maps-sdk-web/tutorials-use-cases/turfjs-integration Marker
+- Inviare il form di ricerca e la formula della distanza {FATTO}
+-aggiungere chiave ip nella tabella views
+
+- Gestire immagini multiple e cambio immagine nell'edit apartment
+- sistemare il filtro ordinare per distanza,
+- aggiungere chiave ip a tabella view
+- tasto Accedi e Registrati devono sparire quando siamo registrati e abbiamo fatto il login
+- tasto "diventa un host" deve collegarci al "crea appartamento", se non sei registrato deve collegarci a "login"
+- gestire il redirect delle pagine solo per autenticati verso login
+- gestire l'invio nel welcome search come il button 'search'
+- autocomplete nelle ricerche
+Docs:
+
+le funzioni
+-address_to_coord()
+-turfjs()
+gestiscono la geolocalizzazione ed il salvataggio dati in database
+
+la view my-map è un esempio funzionante di geolocalizzazione
+my-map0 cancellabile
+
+
+
+in base alla variabile globale register_global:
+
+$ip = @$REMOTE_ADDR;echo "<b> indirizzo IP $ip = </ b>";
+
+@$ip = $ REMOTE_ADDR;
+
+$ip = $_SERVER [‘REMOTE_ADDR’];
+
+in questo modo troviamo l'indirizzo ip del client del nostro sito
+
+
+
+
+
+////// per sistemare la "prova api"
+eliminare la selezione dell id in pagina (app.js)
+eliminare il tasto "prova api"(welcome.blade.php)
+aggiungere queste righe in js, all'interno di turf.js per il Marker:
+var marker = new tt.Marker({
+  draggable: false
+}).setLngLat(center).addTo(map);
+aggiungere questo nella init per non far comparire l'errore in console:
+if (typeof(list_of_months) != "undefined") {
+  getData(list_of_months);
+}
+quando si prova da non loggato ad acceedere ad una pagina che necessita l'autenticazione,
+se l'ip del nuovo autenticato non corrispoinde con chi ha il permesso d'accesso alla pagina da
+errore: da sistemare
